@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := device/cyanogen/msm8916-common
+VENDOR_PATH := device/lge/msm8916-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
-TARGET_CYANOGEN_COMMON := msm8916
+TARGET_LGE_COMMON := msm8916
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
@@ -72,7 +72,6 @@ TARGET_USES_UNCOMPRESSED_KERNEL := true
 else
 TARGET_KERNEL_ARCH := arm
 endif
-TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
