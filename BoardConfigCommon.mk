@@ -114,6 +114,18 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# Malloc
+MALLOC_IMPL := dlmalloc
+
+# Offmode Charging
+COMMON_GLOBAL_CFLAGS += \
+    -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
+    -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 131072
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 
