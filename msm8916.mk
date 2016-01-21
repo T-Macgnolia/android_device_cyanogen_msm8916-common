@@ -167,6 +167,9 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/set-baseband:system/bin/set-baseband
+
 # Wifi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
