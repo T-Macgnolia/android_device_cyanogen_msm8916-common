@@ -170,6 +170,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/set-baseband:system/bin/set-baseband
 
+# USB
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
+
 # Wifi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
