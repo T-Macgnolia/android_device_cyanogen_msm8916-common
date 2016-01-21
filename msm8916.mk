@@ -89,6 +89,12 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Filesystem
+PRODUCT_PACKAGES += \
+    e2fsck \
+    make_ext4fs \
+    setup_fs
+
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=row
