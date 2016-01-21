@@ -127,7 +127,11 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    qcmediaplayer
+
+PRODUCT_BOOT_JARS += \
+    qcmediaplayer
 
 ifneq ($(QCPATH),)
 PRODUCT_PACKAGES += libOmxVdecHevc
@@ -136,6 +140,12 @@ endif
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8916
+
+# Qualcomm
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(LOCAL_PATH)/configs/qmi_config.xml:system/etc/data/qmi_config.xml
 
 # Ramdisk
 PRODUCT_PACKAGES += \
