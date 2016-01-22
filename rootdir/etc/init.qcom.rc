@@ -538,6 +538,6 @@ on property:init.svc.surfaceflinger=running
 
 service wcnss-service /system/bin/wcnss_service
     class main
-    user system
+    user root
     group system wifi radio
     oneshot
